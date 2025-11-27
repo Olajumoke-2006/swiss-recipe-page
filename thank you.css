@@ -1,0 +1,146 @@
+/* BODY */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff8f0;
+    color: #000;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #ff6a00, #ffb347);
+    text-align: center;
+    padding: 40px 20px;
+    color: #000;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* NAVIGATION */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #000;
+    color: #ff6a00;
+    transform: scale(1.05);
+}
+
+/* THANK YOU SECTION */
+.thankyou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 50px 20px;
+}
+
+.thankyou-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thankyou-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.logo-big {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.thankyou-card h1 {
+    color: #ff6a00;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.thankyou-card p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* BUTTON */
+.btn-home {
+    text-decoration: none;
+    background: #ff6a00;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-home:hover {
+    background: #000;
+    color: #ff6a00;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    color: #ff6a00;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 600;
+    margin-top: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .thankyou-card {
+        padding: 30px 20px;
+    }
+    .logo-big {
+        width: 150px;
+        height: 150px;
+    }
+    .thankyou-card h1 {
+        font-size: 22px;
+    }
+    .thankyou-card p {
+        font-size: 16px;
+    }
+}

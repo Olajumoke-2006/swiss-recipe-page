@@ -1,0 +1,127 @@
+/* GLOBAL STYLES */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #fff8f0;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER NAVIGATION */
+header {
+    background: #ff6a00;
+    color: #000;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #000;
+    color: #ff6a00;
+    transform: scale(1.05);
+}
+
+/* PAGE TITLE */
+#recipes h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 40px 0;
+    color: #d94f00;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* RECIPE CARDS */
+.recipe {
+    background: #fff;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* RECIPE HEADINGS */
+.recipe h2 {
+    color: #ff6a00;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.recipe h3 {
+    color: #d94f00;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* IMAGES */
+.recipe img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.recipe p, .recipe ul, .recipe ol {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* INGREDIENTS & STEPS LIST */
+.recipe ul, .recipe ol {
+    margin-left: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    color: #ff6a00;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 600;
+    margin-top: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .recipe {
+        margin: 20px;
+        padding: 15px;
+    }
+    #recipes h1 {
+        font-size: 28px;
+    }
+    .recipe h2 {
+        font-size: 22px;
+    }
+}
